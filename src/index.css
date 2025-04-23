@@ -4,83 +4,88 @@
 
 @layer base {
   :root {
-    --background: 150 54% 98%;
-    --foreground: 160 30% 15%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 160 30% 15%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 160 30% 15%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 150 60% 40%;
-    --primary-foreground: 150 10% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 150 16% 90%;
-    --secondary-foreground: 150 30% 15%;
+    --secondary: 142 44% 96%;
+    --secondary-foreground: 142 76% 36%;
 
-    --muted: 150 10% 95%;
-    --muted-foreground: 150 10% 40%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 150 40% 90%;
-    --accent-foreground: 160 30% 15%;
+    --accent: 142 44% 96%;
+    --accent-foreground: 142 76% 36%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 150 10% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 150 16% 85%;
-    --input: 150 16% 85%;
-    --ring: 150 60% 40%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 76% 36%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 150 10% 98%;
-    --sidebar-foreground: 160 30% 15%;
-    --sidebar-primary: 150 60% 40%;
-    --sidebar-primary-foreground: 150 10% 98%;
-    --sidebar-accent: 150 20% 95%;
-    --sidebar-accent-foreground: 160 30% 15%;
-    --sidebar-border: 150 16% 85%;
-    --sidebar-ring: 150 60% 40%;
+    /* Биомимикрия цвета */
+    --biomimicry-green-50: 142, 44%, 96%;
+    --biomimicry-green-100: 142, 42%, 92%;
+    --biomimicry-green-200: 142, 39%, 85%;
+    --biomimicry-green-300: 142, 36%, 75%;
+    --biomimicry-green-400: 142, 33%, 65%;
+    --biomimicry-green-500: 142, 30%, 55%;
+    --biomimicry-green-600: 142, 33%, 45%;
+    --biomimicry-green-700: 142, 36%, 35%;
+    --biomimicry-green-800: 142, 39%, 25%;
+    --biomimicry-green-900: 142, 42%, 15%;
+
+    --biomimicry-neutral-50: 120, 15%, 98%;
+    --biomimicry-neutral-100: 120, 12%, 95%;
+    --biomimicry-neutral-200: 120, 10%, 90%;
+    --biomimicry-neutral-300: 120, 8%, 85%;
+    --biomimicry-neutral-400: 120, 6%, 75%;
+    --biomimicry-neutral-500: 120, 4%, 65%;
+    --biomimicry-neutral-600: 120, 6%, 55%;
+    --biomimicry-neutral-700: 120, 8%, 45%;
+    --biomimicry-neutral-800: 120, 10%, 35%;
+    --biomimicry-neutral-900: 120, 12%, 25%;
   }
 
   .dark {
-    --background: 160 30% 10%;
-    --foreground: 150 10% 98%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 160 30% 12%;
-    --card-foreground: 150 10% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 160 30% 12%;
-    --popover-foreground: 150 10% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 150 60% 40%;
-    --primary-foreground: 150 10% 98%;
+    --primary: 142 70% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 150 20% 20%;
-    --secondary-foreground: 150 10% 98%;
+    --secondary: 142 30% 20%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 150 20% 20%;
-    --muted-foreground: 150 10% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 150 20% 25%;
-    --accent-foreground: 150 10% 98%;
+    --accent: 142 30% 20%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 150 10% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 150 20% 25%;
-    --input: 150 20% 25%;
-    --ring: 150 60% 40%;
-
-    --sidebar-background: 160 30% 12%;
-    --sidebar-foreground: 150 10% 98%;
-    --sidebar-primary: 150 60% 40%;
-    --sidebar-primary-foreground: 150 10% 98%;
-    --sidebar-accent: 150 20% 20%;
-    --sidebar-accent-foreground: 150 10% 98%;
-    --sidebar-border: 150 20% 25%;
-    --sidebar-ring: 150 60% 40%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 142 70% 50%;
   }
 }
 
@@ -88,28 +93,53 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
+}
 
+@layer components {
   .biomimicry-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+    @apply container max-w-6xl mx-auto px-4 sm:px-6;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-bold text-biomimicry-green-700 mb-6;
+    @apply text-3xl md:text-4xl font-bold text-biomimicry-green-800 mb-6 text-center;
   }
 
   .section-subheading {
-    @apply text-xl md:text-2xl font-semibold text-biomimicry-green-600 mb-4;
+    @apply text-2xl font-semibold text-biomimicry-green-700 mb-6;
   }
 
   .image-card {
-    @apply overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-xl;
+    @apply bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow;
   }
+}
 
-  .image-card img {
-    @apply w-full h-64 object-cover transition-transform duration-500 hover:scale-105;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+/* Lazy loading and image transitions */
+img {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+}
+
+img.loaded {
+  opacity: 1;
 }
